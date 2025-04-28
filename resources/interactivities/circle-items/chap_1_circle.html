@@ -49,6 +49,16 @@
         transform: scale(1.05);
       }
 
+      .item.correct-answer {
+        border-color: #2ecc71;
+        background-color: #d5f5e3;
+      }
+
+      .item.incorrect-answer {
+        border-color: #e74c3c;
+        background-color: #fadbd8;
+      }
+
       .item.selected::before {
         content: "";
         position: absolute;
@@ -141,6 +151,9 @@
       .score-total {
         color: #2980b9;
       }
+      .hide {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -152,7 +165,17 @@
       </div>
       <div class="items-grid" id="items-container"></div>
       <div class="buttons">
-        <button class="btn btn-submit" onclick="checkAnswers()">Submit</button>
+        <button class="btn btn-submit" onclick="checkAnswers()" id="btn-submit">
+          Submit
+        </button>
+        <button
+          class="hide btn btn-submit"
+          style="margin: 0 auto"
+          onclick="showAns()"
+          id="showAns"
+        >
+          Show Answers
+        </button>
         <button class="btn btn-reset" onclick="resetSelection()">Reset</button>
       </div>
       <div class="feedback" id="feedback"></div>
@@ -225,14 +248,38 @@
           score < 0 ? 0 : score
         }</span> / <span class="score-total">${totalCorrectItems}</span>`;
         scoreDisplay.style.display = "block";
+
+        // Show the "Show Answers" button
+        document.getElementById("showAns").classList.remove("hide");
+        document.getElementById("btn-submit").classList.add("hide");
+      }
+
+      function showAns() {
+        const allItems = document.querySelectorAll(".item");
+        allItems.forEach((item) => {
+          const index = parseInt(item.dataset.index);
+          if (items[index].isCorrect) {
+            item.classList.add("correct-answer");
+          } else {
+            item.classList.add("incorrect-answer");
+          }
+        });
+
+        // Hide the "Show Answers" button after showing answers
+        document.getElementById("showAns").classList.add("hide");
+        document.getElementById("btn-submit").classList.remove("hide");
       }
 
       function resetSelection() {
-        document.querySelectorAll(".item").forEach((item) => {
+        const allItems = document.querySelectorAll(".item");
+        allItems.forEach((item) => {
           item.classList.remove("selected");
+          item.classList.remove("correct-answer");
+          item.classList.remove("incorrect-answer");
         });
         document.getElementById("feedback").style.display = "none";
         document.getElementById("score-display").style.display = "none";
+        document.getElementById("showAns").classList.add("hide");
       }
 
       // Initialize when page loads
