@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>True or False Activity</title>
+    <link rel="stylesheet" href="css/true-false.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">
+        <h3>2. Write 'True' or 'False'.</h3>
+      </div>
+      <div id="statements-container"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="score-display" id="score-display"></div>
+      <div class="buttons">
+        <button class="btn btn-submit" onclick="checkAnswers()">Submit</button>
+        <button class="btn btn-reset" onclick="resetQuiz()">Reset</button>
+      </div>
+    </div>
+
+    <audio controls id="audio-intro" class="hide">
+      <source src="./audio/main.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-try-again">
+      <source src="../../audio/try-again.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-clap">
+      <source src="../../audio/welldone.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="js/true-false.js"></script>
+    <script>
+      const statements = [
+        {
+          text: "Do you take care of your grandparents?",
+          answer: "True",
+        },
+        {
+          text: "Do you help in setting the dining table?",
+          answer: "false",
+        },
+        {
+          text: "Do you make your own bed?",
+          answer: "true",
+        },
+        {
+          text: "Do you help your mother incleaning uitensils?",
+          answer: "false",
+        },
+        {
+          text: "Do you help your mother in serving food?",
+          answer: "true",
+        },
+        {
+          text: "Do you help your grandparents in carrying things?",
+          answer: "false",
+        },
+        {
+          text: "Do you help your mother in drying clothes?",
+          answer: "true",
+        },
+        {
+          text: "Do you water plants sometimes?",
+          answer: "true",
+        },
+        {
+          text: "Do you welcome your guests?",
+          answer: "true",
+        },
+      ];
+
+      // Initialize when page loads
+      window.addEventListener("load", () => initializeQuiz(statements));
+    </script>
+  </body>
+</html>
+
+questions: [ ],

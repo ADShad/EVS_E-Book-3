@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>True or False Activity</title>
+    <link rel="stylesheet" href="css/true-false.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">
+        <h3>2. Write 'True' or 'False'.</h3>
+      </div>
+      <div id="statements-container"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="score-display" id="score-display"></div>
+      <div class="buttons">
+        <button class="btn btn-submit" onclick="checkAnswers()" id="btn-submit">
+          Submit
+        </button>
+        <button
+          class="hide btn btn-submit"
+          style="margin: 0 auto"
+          onclick="showAns()"
+          id="showAns"
+        >
+          Show Answers
+        </button>
+        <button class="btn btn-reset" onclick="resetQuiz()">Reset</button>
+      </div>
+    </div>
+
+    <audio controls id="audio-intro" class="hide">
+      <source src="./audio/main.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-try-again">
+      <source src="../../audio/try-again.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-clap">
+      <source src="../../audio/welldone.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="js/true-false.js"></script>
+    <script>
+      const statements = [
+        {
+          text: "Mami served Kashmiri dish with hot dish for lunch.",
+          answer: "True",
+        },
+        {
+          text: "Chiya and Nonikaa were Rishi’s friends.",
+          answer: "False",
+        },
+        {
+          text: "Buransh flowers are red in colour.",
+          answer: "False",
+        },
+        {
+          text: "Spring is a celebration of nature.",
+          answer: "False",
+        },
+      ];
+
+      // Initialize when page loads
+      window.addEventListener("load", () => initializeQuiz(statements));
+    </script>
+  </body>
+</html>

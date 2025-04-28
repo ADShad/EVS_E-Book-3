@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fill in the Blanks</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fill-in-blanks.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>2. Fill in the Blanks</h2>
+      <div id="quiz-container"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="score-display" id="score-display"></div>
+      <div class="buttons">
+        <button class="btn btn-submit" onclick="checkAnswers()" id="btn-submit">Submit</button>
+        <button class="hide btn btn-submit" style=" margin: 0 auto;" onclick="showAns()" id="showAns">Show Answers</button>
+        <button class="btn btn-reset" onclick="resetQuiz()">Reset</button>
+      </div> 
+    </div>
+
+    <audio controls id="audio-intro" class="hide">
+      <source src="./audio/main.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-try-again">
+      <source src="../../audio/try-again.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-clap">
+      <source src="../../audio/welldone.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="js/fill-in-blanks.js"></script>
+    <script>
+      // Quiz configuration
+      const quizData = {
+        questions: [
+          {
+            text: "Mami prepared Kashmiri dish ___ (haakh / dal) with hot rice for lunch.",
+            options: ["haak", "dal"],
+            correct: ["haak"],
+          },
+          {
+            text: "___ (Buransh / Marigold) are red flowers that bloom in spring.",
+            options: ["Buransh", "Marigold"],
+            correct: ["Marigold"],
+          },
+          {
+            text: "___ (Chiya / Unni) and ___ (Nonikaa / Nita) are Rishi’s cousins.",
+            options: ["Chiya", "Unni", "Nonikaa", "Nita"],
+            correct: ["Chiya", "Nonikaa"],
+          },
+          {
+            text: "___ (Buransh flowers / Rose flowers) and ___ (mustard / plants) are placed at the doorstep during spring festival.",
+            options: ["Buransh flowers", "Rose flowers", "mustard", "plants"],
+            correct: ["Buransh flowers", "mustard"],
+          },
+          {
+            text: "___ (Unni / Rita) is Chiya’s friend.",
+            options: ["Unni", "Rita"],
+            correct: ["Unni"],
+          },
+        ],
+      };
+
+      // Initialize the quiz with the specific questions
+      window.addEventListener("load", () => initializeQuiz(quizData));
+    </script>
+  </body>
+</html>

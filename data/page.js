@@ -1,0 +1,166 @@
+const PAGES_LINKING = {
+  /* ch 1 */
+  3: [
+    {
+      x: 90,
+      y: 4,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/true-false/chap_1_ws_1_2.html",
+      type: "iframe",
+      size: "1024",
+    },
+    {
+      x: 90,
+      y: 62,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fib/chap_1_ws_1_5.html",
+      type: "iframe",
+      size: "1024",
+    },
+  ],
+  4: [
+    {
+      x: 90,
+      y: 20,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/mcq_new/chap_1_ws_2_1.html",
+      type: "iframe",
+      size: "1024",
+    },
+    {
+      x: 90,
+      y: 59,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fill-in-blanks/chap_1_ws_2_2.html",
+      type: "iframe",
+      size: "1024",
+    },
+  ],
+
+  5: [
+    {
+      x: 90,
+      y: 16,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fib/chap_1_ws_2_3.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  // 6: [
+  //   {
+  //     x: 90,
+  //     y: 22,
+  //     title: "Interactivity",
+  //     icon: "img/icons/interactivites.gif",
+  //     // link: "resources/interactivities/tf/chap_1_tf_6.html",
+  //     // link: "resources/interactivities/fill-in-blanks/chap_1_ws_3_1.html",
+  //     link: "resources/interactivities/true-false/chap_1_ws_3_1.html",
+  //     type: "iframe",
+  //     size: "1024x800",
+  //   },
+  // ],
+  // 7: [
+  //   {
+  //     x: 90,
+  //     y: 50,
+  //     title: "Interactivity",
+  //     icon: "img/icons/interactivites.gif",
+  //     link: "resources/interactivities/fib/chap_1_fib_7.html",
+  //     type: "iframe",
+  //     size: "1024x750",
+  //   },
+  // ],
+  9: [
+    {
+      x: 90,
+      y: 3,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fill-in-blanks/chap_2_ws_4_2.html",
+      type: "iframe",
+      size: "1024",
+    },
+    {
+      x: 90,
+      y: 60,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/circle-items/chap_1_circle.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+
+  10: [
+    {
+      x: 90,
+      y: 53,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/true-false/chap_1_tf.html",
+      type: "iframe",
+      size: "1024x800",
+    },
+  ],
+  11: [
+    {
+      x: 90,
+      y: 3,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/matching/chap_1_match.html",
+      type: "iframe",
+      size: "1024x800",
+    },
+  ],
+  13: [
+    {
+      x: 90,
+      y: 36,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fib/chap_2_ws_6_4.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  14: [
+    {
+      x: 90,
+      y: 19,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/mcq_new/chap_3_ws_7_1.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  15: [
+    {
+      x: 90,
+      y: 5,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/true-false/chap_3_ws_7_3.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  16: [
+    {
+      x: 90,
+      y: 65,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fill-in-blanks/chap_3_ws_8_2.html",
+      type: "iframe",
+      size: "1024x700",
+    },
+  ],
+};

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fill in the Blanks</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fill-in-blanks.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="feedback" id="feedback"></div>
+      <div class="score-display" id="score-display"></div>
+      <h2>
+        1. How do you help your family? Answer the questions in 'Yes' or 'No'.
+      </h2>
+      <div id="quiz-container"></div>
+      <div class="buttons">
+        <button class="btn btn-submit" onclick="checkAnswers()">Submit</button>
+        <button class="btn btn-reset" onclick="resetQuiz()">Reset</button>
+      </div>
+    </div>
+
+    <audio controls id="audio-intro" class="hide">
+      <source src="./audio/ch_1_ws_3_1.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-try-again">
+      <source src="../../audio/try-again.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-clap">
+      <source src="../../audio/welldone.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="js/fill-in-blanks.js"></script>
+    <script>
+      // Quiz configuration
+      const quizData = {
+        
+      };
+
+      // Initialize the quiz with the specific questions
+      window.addEventListener("load", () => initializeQuiz(quizData));
+    </script>
+  </body>
+</html>

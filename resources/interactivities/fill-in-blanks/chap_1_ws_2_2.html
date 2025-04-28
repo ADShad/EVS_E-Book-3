@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fill in the Blanks</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/fill-in-blanks.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>2. Fill in the Blanks</h2>
+      <div id="quiz-container"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="score-display" id="score-display"></div>
+      <div class="buttons">
+        <button class="btn btn-submit" onclick="checkAnswers()" id="btn-submit">Submit</button>
+        <button class="hide btn btn-submit" style=" margin: 0 auto;" onclick="showAns()" id="showAns">Show Answers</button>
+        <button class="btn btn-reset" onclick="resetQuiz()">Reset</button>
+      </div> 
+    </div>
+
+    <audio controls id="audio-intro" class="hide">
+      <source src="./audio/main.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-try-again">
+      <source src="../../audio/try-again.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-clap">
+      <source src="../../audio/welldone.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="js/fill-in-blanks.js"></script>
+    <script>
+      // Quiz configuration
+      const quizData = {
+        questions: [
+          {
+            text: "Our parents' parents are our ___ ",
+            options: ["grandparents", "parents"],
+            correct: ["grandparents"],
+          },
+          {
+            text: "___ is one of the closest friends of Bela.",
+            options: ["Munni", "raja"],
+            correct: ["Munni"],
+          },
+          {
+            text: "Bela and Banku enjoy playing ___ with Dadaji and their friends Niku, Rinki, Rohit, Ronnie and Tara.",
+            options: ["pitthoo", "snakes & ladders"],
+            correct: ["pitthoo"],
+          },
+          {
+            text: "The ___ bought ice-cream for the children.",
+            options: ["grandfather", "father"],
+            correct: ["grandfather"],
+          },
+          {
+            text: "We live together in a house as a ___",
+            options: ["family", "parent"],
+            correct: ["family"],
+          },
+        ],
+      };
+
+      // Initialize the quiz with the specific questions
+      window.addEventListener("load", () => initializeQuiz(quizData));
+    </script>
+  </body>
+</html>
