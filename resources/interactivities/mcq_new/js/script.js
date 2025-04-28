@@ -143,6 +143,7 @@ function resetQuiz() {
   submitButton.onclick = checkAnswers;
 
   // Hide score
+  document.querySelector(".feedback").style.display = "none";
   document.querySelector(".score").style.display = "none";
 }
 
