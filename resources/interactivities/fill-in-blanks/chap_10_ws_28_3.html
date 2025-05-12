@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fill in the Blanks</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fill-in-blanks.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>2. Fill in the Blanks</h2>
+      <div id="quiz-container"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="score-display" id="score-display"></div>
+      <div class="buttons">
+        <button class="btn btn-submit" onclick="checkAnswers()" id="btn-submit">
+          Submit
+        </button>
+        <button
+          class="hide btn btn-submit"
+          style="margin: 0 auto"
+          onclick="showAns()"
+          id="showAns"
+        >
+          Show Answers
+        </button>
+        <button class="btn btn-reset" onclick="resetQuiz()">Reset</button>
+      </div>
+    </div>
+
+    <audio controls id="audio-intro" class="hide">
+      <source src="./audio/main.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-try-again">
+      <source src="../../audio/try-again.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audio-clap">
+      <source src="../../audio/welldone.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="js/fill-in-blanks.js"></script>
+    <script>
+      // Quiz configuration
+      const quizData = {
+        questions: [
+          {
+            text: "A spoon has a ___ (shiny / dull) and ___ (smooth / rough) surface.",
+            options: ["shiny", "dull", "smooth", "rough"],
+            correct: ["shiny", "smooth"],
+          },
+          {
+            text: "Wood is ___ (hard / soft) and ___ (rigid / flexible).",
+            options: ["hard", "soft", "rigid", "flexible"],
+            correct: ["hard", "rigid"],
+          },
+          {
+            text: "Things that do not change their shape are called ___ (liquid / solid).",
+            options: ["liquid", "solid"],
+            correct: ["solid"],
+          },
+          {
+            text: "Things that are made by people are called ___ (artificial / natural) things.",
+            options: ["artificial", "natural"],
+            correct: ["artificial"],
+          },
+          {
+            text: "Steel, brass and bronze are ___ (alloys / ore) of metals.",
+            options: ["alloys", "ore"],
+            correct: ["alloys"],
+          },
+          {
+            text: "___ (Air / Water) is an example of gas.",
+            options: ["Air", "Water"],
+            correct: ["Air"],
+          },
+        ],
+      };
+
+      // Initialize the quiz with the specific questions
+      window.addEventListener("load", () => initializeQuiz(quizData));
+    </script>
+  </body>
+</html>

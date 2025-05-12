@@ -436,4 +436,123 @@ const PAGES_LINKING = {
       size: "1024x750",
     },
   ],
+  56: [
+    {
+      x: 90,
+      y: 66,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/true-false/chap_10_ws_28_2.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  57: [
+    {
+      x: 90,
+      y: 4,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fill-in-blanks/chap_10_ws_28_3.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  58: [
+    {
+      x: 90,
+      y: 42,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/match-columns/chap_10_ws_29_2.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  60: [
+    {
+      x: 90,
+      y: 20,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/mcq_new/chap_11_ws_30_1.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  61: [
+    {
+      x: 90,
+      y: 42,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/mcq_new/chap_11_ws_30_3.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  63: [
+    {
+      x: 90,
+      y: 20,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/true-false/chap_11_ws_31_3.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  65: [
+    {
+      x: 90,
+      y: 66,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fib/chap_11_ws_32_3.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  66: [
+    {
+      x: 90,
+      y: 20,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/mcq_new/chap_12_ws_33_1.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  69: [
+    {
+      x: 90,
+      y: 4,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/mcq_new/chap_12_ws_34_2.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+    {
+      x: 90,
+      y: 50,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/true-false/chap_12_ws_34_3.html",
+      type: "iframe",
+      size: "1024x750",
+    },
+  ],
+  70:[
+    {
+      x: 90,
+      y: 20,
+      title: "Interactivity",
+      icon: "img/icons/interactivites.gif",
+      link: "resources/interactivities/fib/chap_12_ws_35_1.html",
+      type: "iframe",
+      size: "1024x750",
+    }
+  ]
 };
